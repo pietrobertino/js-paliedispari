@@ -1,5 +1,8 @@
 // Chiedo all'utente una parola
-const user_word = prompt("Inserire una parola");
+let user_word = prompt("Inserire una parola");
+
+//Per sicurezza rendo la parola tutta minuscola
+user_word = user_word.toLowerCase();
 
 //Creo la funzione per verificare se una parola è palindroma
 function isPalindrome (word) {
